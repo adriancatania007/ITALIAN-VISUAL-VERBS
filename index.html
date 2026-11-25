@@ -8,7 +8,7 @@ const topics=[{"id": 1, "title": "Divertirsi con gli amici", "en": "Friends & so
 const root=document.getElementById('topics'),home=document.getElementById('home'),detail=document.getElementById('detail'),content=document.getElementById('detail-content');
 function el(tag,cl,txt){let x=document.createElement(tag);if(cl)x.className=cl;if(txt!==undefined)x.textContent=txt;return x}
 for(const t of topics){const b=el('button','topic');b.type='button';b.innerHTML=`<div class="art" style="--art-bg:${t.bg}"><span class="emoji" role="img" aria-label="${t.en}">${t.icon}</span></div><div class="topic-body"><h3></h3><p></p><div class="topic-foot"><span>Esplora i verbi</span><span>→</span></div></div>`;b.querySelector('h3').textContent=t.title;b.querySelector('p').textContent=t.en;b.addEventListener('click',()=>showTopic(t.id));root.append(b)}
-function showTopic(id){if(id===9){window.location.href='la_routine_quotidiana.html';return;}if(id===10){window.location.href='la_vita_scolastica.html';return;}if(id===1){window.location.href='divertirsi_con_gli_amici.html';return;}
+function showTopic(id){if(id===7){window.location.href='al_ristorante_e_in_pizzeria.html';return;}if(id===9){window.location.href='la_routine_quotidiana.html';return;}if(id===10){window.location.href='la_vita_scolastica.html';return;}if(id===1){window.location.href='divertirsi_con_gli_amici.html';return;}
 if(id===2){window.location.href='andare_in_vacanza.html';return;}
 if(id===3){window.location.href='i_passatempi.html';return;}
 if(id===4){window.location.href='la_salute_e_il_benessere.html';return;}
